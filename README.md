@@ -1,354 +1,73 @@
-# GitHub-Markdown
-Markdown for posting on GitHub
-
-
-H E A D E R S
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
-
-
- M A G E S
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-
-L I N K S
-http://github.com - automatic!
-[GitHub](http://github.com)
-
-B L O C K Q U O T E S
-As Kanye West said:
-> We're living the future so
-> the present is our past.
-
-E M P H A S I S
-*This text will be italic*
-_This will also be italic_
-**This text will be bold**
-__This will also be bold__
-*You **can** combine them*
-
-Username @ mentions
-Typing an @ symbol, followed by a username, will
-notify that person to come and view the comment.
-This is called an “@mention”, because you’re
-mentioning the individual. You can also @mention
-teams within an organization
-
-I S S U E R E F E R E N C E S
-Any number that refers to an Issue or Pull Request
-will be automatically converted into a link.
-#1
-defunkt#1
-defunkt/github-flavored-markdown#1
-
-TA S K L I S T S
-- [x] @mentions, #refs, [links](),
-**formatting**, and <del>tags</del>
-supported
-- [x] list syntax required (any
-unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
-@mentions, #refs, links, formaing,
-and tags supported
-list syntax required (any unordered
-or ordered list supported)
-this is a complete item
-this is an incomplete item
-
-F E N C E D C O D E B L O C K S
-```javascript
-function test() {
-console.log("look ma`, no spaces");
-}
-```
-Markdown coverts text with four leading spaces
-into a code block; with GFM you can wrap your code
-with ``` to create a code block without the
-leading spaces. Add an optional language identifier
-and your code with get syntax highlighting.
-
-Tables
-You can create tables by assembling a list of
-words and dividing them with hyphens -
-(for the first row), and then separating each
-column with a pipe | 
-
-First Header | Second Header
------------- | -------------
-Content cell 1 | Content cell 2
-Content column 1 | Content column 2
-
-E M O J I
-To see a list of every image we support, check out
-www.emoji-cheat-sheet.com
-I S S U E R E F E R E N C E S
-Any number that refers to an Issue or Pull Request
-will be automatically converted into a link.
-#1
-defunkt#1
-defunkt/github-flavored-markdown#1
-GitHub supports emoji!
-:+1: :sparkles: :camel: :tada:
-:rocket: :metal: :octocat:
-
-
-
-Markdown Cheatsheet<a name="TOP"></a>
-===================
-
-- - - - 
-# Heading 1 #
-
-    Markup :  # Heading 1 #
-
-    -OR-
-
-    Markup :  ============= (below H1 text)
-
-## Heading 2 ##
-
-    Markup :  ## Heading 2 ##
-
-    -OR-
-
-    Markup: --------------- (below H2 text)
-
-### Heading 3 ###
-
-    Markup :  ### Heading 3 ###
-
-#### Heading 4 ####
-
-    Markup :  #### Heading 4 ####
-
-
-Common text
-
-    Markup :  Common text
-
-_Emphasized text_
-
-    Markup :  _Emphasized text_ or *Emphasized text*
-
-~~Strikethrough text~~
-
-    Markup :  ~~Strikethrough text~~
-
-__Strong text__
-
-    Markup :  __Strong text__ or **Strong text**
-
-___Strong emphasized text___
-
-    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
-
-[Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
-
-    Markup :  [Named Link](http://www.google.fr/ "Named link title") and http://www.google.fr/ or <http://example.com/>
-
-[heading-1](#heading-1 "Goto heading-1")
-    
-    Markup: [heading-1](#heading-1 "Goto heading-1")
-
-Table, like this one :
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
-```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-```
-
-Adding a pipe `|` in a cell :
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | \|
-
-```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  |  \| 
-```
-
-Left, right and center aligned table
-
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
-
-```
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
-```
-
-`code()`
-
-    Markup :  `code()`
-
-```javascript
-    var specificLanguage_code = 
-    {
-        "data": {
-            "lookedUpPlatform": 1,
-            "query": "Kasabian+Test+Transmission",
-            "lookedUpItem": {
-                "name": "Test Transmission",
-                "artist": "Kasabian",
-                "album": "Kasabian",
-                "picture": null,
-                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
-            }
-        }
-    }
-```
-
-    Markup : ```javascript
-             ```
-
-* Bullet list
-    * Nested bullet
-        * Sub-nested bullet etc
-* Bullet list item 2
-
-~~~
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
-
--OR-
-
- Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
-          - Bullet list item 2 
-~~~
-
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
-
-~~~
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
-~~~
-
-- [ ] An uncompleted task
-- [x] A completed task
-
-~~~
- Markup : - [ ] An uncompleted task
-          - [x] A completed task
-~~~
-
-- [ ] An uncompleted task
-    - [ ] A subtask
-
-~~~
- Markup : - [ ] An uncompleted task
-              - [ ] A subtask
-~~~
-
-> Blockquote
->> Nested blockquote
-
-    Markup :  > Blockquote
-              >> Nested Blockquote
-
-_Horizontal line :_
-- - - -
-
-    Markup :  - - - -
-
-_Image with alt :_
-
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-Foldable text:
-
-<details>
-  <summary>Title 1</summary>
-  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-</details>
-<details>
-  <summary>Title 2</summary>
-  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
-</details>
-
-    Markup : <details>
-               <summary>Title 1</summary>
-               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-             </details>
-
-```html
-<h3>HTML</h3>
-<p> Some HTML code here </p>
-```
-
-Link to a specific part of the page:
-
-[Go To TOP](#TOP)
-   
-    Markup : [text goes here](#section_name)
-              section_title<a name="section_name"></a>    
-
-Hotkey:
-
-<kbd>⌘F</kbd>
-
-<kbd>⇧⌘F</kbd>
-
-    Markup : <kbd>⌘F</kbd>
-
-Hotkey list:
-
-| Key | Symbol |
-| --- | --- |
-| Option | ⌥ |
-| Control | ⌃ |
-| Command | ⌘ |
-| Shift | ⇧ |
-| Caps Lock | ⇪ |
-| Tab | ⇥ |
-| Esc | ⎋ |
-| Power | ⌽ |
-| Return | ↩ |
-| Delete | ⌫ |
-| Up | ↑ |
-| Down | ↓ |
-| Left | ← |
-| Right | → |
-
-Emoji:
-
-:exclamation: Use emoji icons to enhance text. :+1:  Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
-
-    Markup : Code appears between colons :EMOJICODE:
-
-
 # Github Markdown Cheat Sheet
 
-> Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by [John Gruber](https://daringfireball.net/projects/markdown/) in 2004, Markdown is now one of the world’s most popular markup languages.
-> 
-> - https://www.markdownguide.org/getting-started/#whats-markdown
+This is a guide to assist with anyone who is looking to update their readme files or create new repos. If there are any updates, changes or alterations, please be sure to file an issue/pr to get that issue resolved.
+
+## Table Of Contents
+  * [Headers](#headers)
+  * [Emphasis](#emphasis)
+  * [Lists](#lists)
+    + [Unordered](#unordered)
+    + [Ordered](#ordered)
+  * [Images](#images)
+  * [Links](#links)
+  * [Blockquotes](#blockquotes)
+  * [Horizontal Rules](#horizontal-rules)
+  * [Tabels](#tabels)
+  * [Blackslash escape](#blackslash-escape)
+  * [Task Lists](#task-lists)
+  * [Inline HTML](#inline-html)
+  * [Colapsable section](#colapsable-section)
+  * [Link to the top of the page or a specific section on said page](#link-to-the-top-of-the-page-or-a-specific-section-on-said-page)
+  * [Fenced Code Blocks](#fenced-code-blocks)
+  * [Syntax highlighting](#syntax-highlighting)
+    + [No highlighting](#no-highlighting)
+    + [Highlighting](#highlighting)
+    + [JavaScript Syntax](#javascript-syntax)
+    + [Python Syntax](#python-syntax)
+    + [HTML Syntax](#html-syntax)
+    + [No Langauage](#no-langauage)
+  * [Inline code](#inline-code)
+  * [Emoji](#emoji)
+  * [Username `@` mentions](#username-----mentions)
+  * [Issue References](#issue-references)
+  * [Hotkey](#hotkey)
+  * [Footnotes](#footnotes)
+  * [YouTube Videos](#youtube-videos)
+
+```
+## Table Of Contents
+  * [Headers](#headers)
+  * [Emphasis](#emphasis)
+  * [Lists](#lists)
+    + [Unordered](#unordered)
+    + [Ordered](#ordered)
+  * [Images](#images)
+  * [Links](#links)
+  * [Blockquotes](#blockquotes)
+  * [Horizontal Rules](#horizontal-rules)
+  * [Tabels](#tabels)
+  * [Blackslash escape](#blackslash-escape)
+  * [Task Lists](#task-lists)
+  * [Inline HTML](#inline-html)
+  * [Colapsable section](#colapsable-section)
+  * [Link to the top of the page or a specific section on said page](#link-to-the-top-of-the-page-or-a-specific-section-on-said-page)
+  * [Fenced Code Blocks](#fenced-code-blocks)
+  * [Syntax highlighting](#syntax-highlighting)
+    + [No highlighting](#no-highlighting)
+    + [Highlighting](#highlighting)
+    + [JavaScript Syntax](#javascript-syntax)
+    + [Python Syntax](#python-syntax)
+    + [HTML Syntax](#html-syntax)
+    + [No Langauage](#no-langauage)
+  * [Inline code](#inline-code)
+  * [Emoji](#emoji)
+  * [Username `@` mentions](#username-----mentions)
+  * [Issue References](#issue-references)
+  * [Hotkey](#hotkey)
+  * [Footnotes](#footnotes)
+  * [YouTube Videos](#youtube-videos)
+```
+
 
 ## Headers 
 
@@ -402,7 +121,7 @@ __This will also be bold__
 
 ~~This text will be crossed out (strikethrough)~~ 
 
-_You **can** combine them_
+_You __can__ combine them_
 
 ***All this text is bold and italic***
 
@@ -453,12 +172,35 @@ _You **can** combine them_
 
 ## Images 
 
+*Note if you are looking to link images, it is advised to create a folder in the readme location labeled "Media" or "Images". This will help prevent the image from vanishing if uploaded any other way.* 
+
+If you are running a repository that runs LFS (Large File Support), then you may run into issues uploading and displaying images. If this is the case you will need to modify the repo on the host end (GitHub) to allow uploading of these images. 
+
+Navigate to the ".gitattributes" file in the repo. Search for the files that you are using in the readme (Usually it will be png). Will look something like this
+
+*.png filter=lfs diff=lfs merge=lfs -text
+
+Copy and paste at the bottom of the text file including the file those images are stored in. For example;
+
+Media/*.png filter= diff= merge= -text
+or
+Images/*.png filter= diff= merge= -text
+
+
 ```markdown
 Format:  ![Alt Text](url)
-Example: ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+Example: ![Newspaper Delivery Game](https://github.com/o3de/NewspaperDeliveryGame/blob/main/Media/image7.png)
 ```
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+If the image is located within folder tree that this readme is located in, you would then use the following:
+
+```markdown
+Format:  ![Alt Text](url)
+Example: ![Newspaper Delivery Game](/Media/image01.png)
+"Media" being the folder that your images are located in. 
+```
+
+![Newspaper Delivery Game](https://github.com/o3de/NewspaperDeliveryGame/blob/main/Media/image7.png)
 
 ## Links 
 
@@ -514,48 +256,6 @@ ______
 *** 
 ----
 ______
-
-## Inline code
-
-```markdown
-I think you should use an `<addr>` element here instead.
-```
-
-I think you should use an `<addr>` element here instead.
-
-## Fenced Code Blocks 
-
-### No highlighting 
-
-````markdown
-```
-if (isAwesome){
-  return true
-}
-```
-````
-
-```
-if (isAwesome) {
-  return true
-}
-```
-
-### Highlighting 
-
-````markdown
-```javascript 
-if (isAwesome){
-  return true
-}
-```
-````
-
-```javascript
-if (isAwesome) {
-  return true
-}
-```
 
 ## Tabels 
 
@@ -625,10 +325,12 @@ Markdown allows you to use backslash escapes to generate literal characters whic
 ```
 - [x] this is a complete item 
 - [ ] this is an incomplete it
+   - [ ] A subtask
 ```
 
 - [x] this is a complete item 
 - [ ] this is an incomplete it
+   - [ ] A subtask
 
 ## Inline HTML
 
@@ -653,15 +355,326 @@ Markdown also supports raw HTML.
 </dl>
 
 ```html
-<p>Markdown and HTML does *not* work **well**. Use <i>HTML</i> <b>tags</b> instead.</p>
+<p>Markdown in HTML does *not* work **well**. Use <i>HTML</i> <b>tags</b> instead.</p>
 ```
 
 <p>Markdown in HTML does *not* work **well**. Use <i>HTML</i> <b>tags</b> instead.</p>
 
+## Colapsable section
+
+
+<details>
+  <summary>Title 1</summary>
+  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+</details>
+<details>
+  <summary>Title 2</summary>
+  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
+</details>
+
+
+```markdown
+<details>
+ <summary>Title 1</summary>
+ <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+</details>
+```  
+
+## Link to the top of the page or a specific section on said page
+
+[Go To TOP](#Table_of_contents)
+<a name="Table_of_contents"></a>
+   
+```markdown
+[Go To TOP](#Table_of_contents)
+<a name="Table_of_contents"></a>
+``` 
+
+```markdown
+[a Name](#Section_ID)
+<a name="Section_ID></a>
+```   
+  
+
+## Fenced Code Blocks
+
+You can create fenced code blocks by placing triple backticks ` ``` ` before and after the code block. We recommend placing a blank line before and after code blocks to make the raw formatting easier to read.
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
+To display triple backticks in a fenced code block, wrap them inside quadruple backticks.
+
+````````
+````
+```
+Look! You can see my backticks.
+```
+````
+````````
+
+````
+```
+Look! You can see my backticks.
+```
+````
+
+## Syntax highlighting
+
+You can add an optional language identifier to enable syntax highlighting in your fenced code block.
+
+For example, to syntax highlight Ruby code:
+
+````
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+````
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+### No highlighting 
+
+````markdown
+```
+if (isAwesome){
+  return true
+}
+```
+````
+
+```
+if (isAwesome) {
+  return true
+}
+```
+
+````
+```markdown
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+````
+
+```markdown
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+### Highlighting 
+
+````markdown
+```javascript 
+if (isAwesome){
+  return true
+}
+```
+````
+
+```javascript
+if (isAwesome) {
+  return true
+}
+```
+
+### JavaScript Syntax
+
+````
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+````
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+ 
+### Python Syntax
+
+````
+```python
+s = "Python syntax highlighting"
+print s
+```
+````
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+
+### HTML Syntax
+````
+``` html
+<p><pre><code class="language-html">&lt;p&gt;HTML Document&lt;/p&gt;
+</code></pre></p>
+```
+````
+
+``` html
+<p><pre><code class="language-html">&lt;p&gt;HTML Document&lt;/p&gt;
+</code></pre></p>
+```
+ 
+### No Langauage
+
+````
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
+````
+
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
+
+You can have list/line code sections as well. 
+
+````
+Title
+----
+- Line1
+  ```bash
+  ls
+  ```
+  - Line2
+    ```bash
+    ls -l
+    ```
+````
+
+#### Title
+----
+- Line1
+  ```bash
+  ls
+  ```
+  - Line2
+    ```bash
+    ls -l
+    ```
+
+## Inline code
+
+```markdown
+I think you should use an `<addr>` element here instead.
+```
+
+I think you should use an `<addr>` element here instead.
+
+Markdown coverts text with four leading spaces
+into a code block; with GFM you can wrap your code
+with 
+
+
 ## Emoji
+
+Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
 
 ```markdown
 :+1: :sparkles: :camel: :tada: :rocket: :metal:
 ```
 
 :+1: :sparkles: :camel: :tada: :rocket: :metal:
+
+## Username `@` mentions
+Typing an @ symbol, followed by a username, will
+notify that person to come and view the comment.
+This is called an “@mention”, because you’re
+mentioning the individual. You can also @mention
+teams within an organization
+
+## Issue References
+Any number that refers to an Issue or Pull Request
+will be automatically converted into a link. Note this issue has to be located from within the repository that you are doing your work in. 
+#1
+
+
+## Hotkey
+
+<kbd>⌘F</kbd>
+
+<kbd>⇧⌘F</kbd>
+
+```markdown
+<kbd>⌘F</kbd>
+``` 
+
+Hotkey list:
+
+| Key | Symbol |
+| --- | --- |
+| Option | ⌥ |
+| Control | ⌃ |
+| Command | ⌘ |
+| Shift | ⇧ |
+| Caps Lock | ⇪ |
+| Tab | ⇥ |
+| Esc | ⎋ |
+| Power | ⌽ |
+| Return | ↩ |
+| Delete | ⌫ |
+| Up | ↑ |
+| Down | ↓ |
+| Left | ← |
+| Right | → |
+
+
+## Footnotes
+
+Footnotes aren't part of the core Markdown spec, but they supported by GFM.
+
+```Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].  
+
+You can also use words, to fit your writing style more closely[^note].
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
+```
+
+Reners to: 
+
+![footnote](https://user-images.githubusercontent.com/425687/160298620-6046b90e-698c-43cb-8e00-5f5871a906ad.png)
+
+
+## YouTube Videos
+
+They can't be added directly but you can add an image with a link to the video like this:
+
+```markdown
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+```
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
+" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+Or, in pure Markdown, but losing the image sizing and border:
+
+```markdown
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+```
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
