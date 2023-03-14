@@ -574,7 +574,7 @@ You can also use words, to fit your writing style more closely[^note].
     This footnote also has been made with a different syntax using 4 spaces for new lines.
 ```
 Reners to: 
-![footnote](https://user-images.githubusercontent.com/425687/160298620-6046b90e-698c-43cb-8e00-5f5871a906ad.png)
+![footnote](/process-docs-and-markdown/files/media/footer.png)
 ## YouTube Videos
 They can't be added directly but you can add an image with a link to the video like this:
 ```markdown
